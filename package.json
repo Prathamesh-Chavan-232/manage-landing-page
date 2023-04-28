@@ -1,0 +1,17 @@
+{
+	"name": "manage-fem-ui",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"watch:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+		"build": "vite build",
+		"build:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"tailwindcss": "^3.3.2",
+		"vite": "^4.3.2"
+	}
+}

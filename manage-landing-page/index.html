@@ -33,6 +33,23 @@
 				>
 					Get Started
 				</a>
+				<!-- Hamburger Menu -->
+				<button id="hamburger-menu" class="block hamburger lg:hidden">
+					<span class="hamburger-top"></span>
+					<span class="hamburger-middle"></span>
+					<span class="hamburger-bottom"></span>
+				</button>
+			</div>
+			<!-- Mobile menu -->
+			<div
+				id="mobile-menu"
+				class="py-8 mt-10 space-y-6 left-6 right-6 drop-shadow-md font-bold bg-white absolute hidden flex-col items-center self-end sm:w-auto sm:self-center"
+			>
+				<a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+				<a href="#" class="hover:text-darkGrayishBlue">Products</a>
+				<a href="#" class="hover:text-darkGrayishBlue">About us</a>
+				<a href="#" class="hover:text-darkGrayishBlue">Careers</a>
+				<a href="#" class="hover:text-darkGrayishBlue">Community</a>
 			</div>
 		</nav>
 
@@ -241,10 +258,10 @@
 			</div>
 		</section>
 		<!-- CTA Section -->
-		<section id="CTA" class="bg-brightRed">
+		<section id="cta" class="bg-brightRed">
 			<!-- Flex Container -->
 			<div
-				class="px-6 py-24 mx-auto space-y-12 container flex flex-col items-center justify-between md:py-1iuokj2 md:flex-row md:space-y-0"
+				class="px-6 py-24 mx-auto space-y-12 container flex flex-col items-center justify-between md:py-iiiii12 md:flex-row md:space-y-0"
 			>
 				<!-- Heading -->
 				<h2
@@ -261,25 +278,80 @@
 			</div>
 		</section>
 		<!-- Footer -->
-		<section id="footer" class="bg-veryDarkBlue">
+		<footer id="footer" class="bg-veryDarkBlue">
 			<!-- Flex container -->
 			<div
-				class="px-6 py-10 mx-auto space-y-8 container flex flex-col-reverse justify-between md:flex-row md:space-y-0"
+				class="py-10 mx-auto space-y-8 container flex flex-col-reverse justify-between lg:flex-row lg:space-y-0"
 			>
 				<!-- Logo & Socials container -->
 				<div
-					class="space-y-12 container flex flex-col-reverse items-center justify-between md:space-y-0 md:flex-col md:items-start"
+					class="space-y-12 flex flex-col-reverse items-center justify-between lg:space-y-0 lg:flex-col lg:items-start"
 				>
+					<div class="mx-auto my-6 text-center text-white lg:hidden">
+						Copyright &copy; 2023, All rights reserved
+					</div>
 					<!-- Logo -->
 					<div>
-						<img src="assets/logo.svg" alt="logo" />
+						<img src="assets/logo.svg" alt="logo" class="h-8" />
 					</div>
 					<div class="flex justify-center space-x-4">
 						<!-- Socials -->
+						<a href="#">
+							<img src="assets/icon-facebook.svg" alt="" class="h-8" />
+						</a>
+						<a href="#">
+							<img src="assets/icon-youtube.svg" alt="" class="h-8" />
+						</a>
+						<a href="#">
+							<img src="assets/icon-twitter.svg" alt="" class="h-8" />
+						</a>
+						<a href="#">
+							<img src="assets/icon-pinterest.svg" alt="" class="h-8" />
+						</a>
+						<a href="#">
+							<img src="assets/icon-instagram.svg" alt="" class="h-8" />
+						</a>
+					</div>
+				</div>
+				<!-- List Container -->
+				<div class="flex justify-around space-x-32">
+					<!-- List 1 -->
+					<div class="flex flex-col space-y-3 text-white">
+						<a href="#" class="hover:text-brightRed">Home</a>
+						<a href="#" class="hover:text-brightRed">Pricing</a>
+						<a href="#" class="hover:text-brightRed">Products</a>
+						<a href="#" class="hover:text-brightRed">About</a>
+					</div>
+					<!-- List 2 -->
+					<div class="flex flex-col space-y-3 text-white">
+						<a href="#" class="hover:text-brightRed">Careers</a>
+						<a href="#" class="hover:text-brightRed">Community</a>
+						<a href="#" class="hover:text-brightRed">Privacy Policy</a>
+					</div>
+				</div>
+
+				<!-- Input Container -->
+				<div class="flex flex-col justify-between">
+					<form action="">
+						<div class="flex space-x-3">
+							<input
+								type="text"
+								placeholder="Updated in your inbox"
+								class="flex-1 px-4 rounded-full focus:outline-none"
+							/>
+							<button
+								class="px-6 py-2 text-white rounded-full bg-brightRedLight focus:outline-none"
+							>
+								Go
+							</button>
+						</div>
+					</form>
+					<div class="hidden text-white lg:flex">
+						Copyright &copy; 2023, All rights reserved.
 					</div>
 				</div>
 			</div>
-		</section>
+		</footer>
 	</body>
 	<script type="module" src="./src/main.js"></script>
 </html>

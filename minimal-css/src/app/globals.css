@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Minimal CSS Reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+	margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* Set color scheme from system preference */
+html {
+  color-scheme: light dark;
+}
+
+/* Set core body defaults */
+body {
+  font-family: var(--ff-base);
+  color: var(--clr-text); 
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeSpeed;
+	line-height: 1.6;
+}
+
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* Colors & font-sizes */
+:root {
+  /* Backgroud Colors */
+  --clr-primary: #eee;
+  --clr-bg: #222222;
+  --clr-bg-light: #f4f4f4;
+
+  /* Title & SubTitles */
+  --clr-title: #363636;
+  --clr-subtitle: #777;
+
+  /* Text Colors */
+  --clr-text: #fff;
+  --clr-text-gray: #aaa;
+  --clr-text-black: #000;
+  --clr-text-blue: #0000ee;
+
+  --ff-base: "Source Sans Pro", sans-serif;
+  --ff-accent: "Source Sans Pro", sans-serif;
+  
+  --fs-200: clamp(0.88rem, calc(0.96rem + -0.09vw), 0.94rem);
+  --fs-300: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+  --fs-400: clamp(1.35rem, calc(1.2rem + 0.73vw), 1.77rem);
+  --fs-500: clamp(1.62rem, calc(1.31rem + 1.53vw), 2.5rem);
+  --fs-600: clamp(1.94rem, calc(1.39rem + 2.77vw), 3.53rem);
+  --fs-700: clamp(2.33rem, calc(1.41rem + 4.63vw), 5rem);
+  --fs-800: clamp(2.8rem, calc(1.32rem + 7.42vw), 7.07rem);
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root { 
+    /* Backgroud Colors */
+    --clr-primary: #eee;
+    --clr-bg: #222222;
+    --clr-bg-light: #f4f4f4;
+
+    /* Title & SubTitles */
+    --clr-title: #363636;
+    --clr-subtitle: #777;
+
+    /* Text Colors */
+    --clr-text-white: #fff;
+    --clr-text-gray: #aaa;
+    --clr-text-black: #000;
+    --clr-text-blue: #0000ee;
+  }  
+}
+

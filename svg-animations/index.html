@@ -3,11 +3,41 @@
 	<head>
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<link rel="stylesheet" href="./style.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Vite App</title>
+		<title>SVG Animations
+    </title>
 	</head>
+
 	<body>
-		<div id="app"></div>
-		<script type="module" src="/main.js"></script>
+		<div class="app">
+			<div class="line-container">
+				<svg
+					viewBox="0 0 419 1265"
+					fill="none"
+					preserveAspectRatio="xMidYMax meet"
+				>
+					<path
+						d="M238 -194V-126C240.667 -29.3333 246.4 190 248 294C249.6 398 202.333 454 178.5 469L102.5 531.5L3 462V622.5C61.1667 563.5 191.6 445.5 248 445.5C304.4 445.5 383.167 512.167 415.5 545.5C386.333 579 310.7 636 241.5 636C241.5 757.6 255.833 866 263 905M263 905H289C287 913.667 286.6 932.2 301 937C319 943 351 955 355 968C359 981 360 997 355 1010C351 1020.4 333.333 1025 325 1026C321.333 1020.67 314.2 1018 315 1050C316 1090 305 1189 315 1196C325 1203 355 1205 355 1226C355 1247 357 1262 350 1261C344.4 1260.2 311 1260.67 295 1261C268.333 1186.67 207.7 1051.2 178.5 1104C149.3 1156.8 134.823 1237.33 133.823 1266M263 905C212.5 941.5 225 984.5 225.5 1010C226 1035.5 181.5 1063 156.5 1063.29M133.823 1266C83.4893 1276.67 5.6 1274.8 28 1170C34.626 1139 40 1116 74 1114C101.2 1112.4 104.333 1079.33 102.5 1063C98.3333 1054 82.6 1036.8 53 1040C50.6667 1019.67 57.3 983 102.5 999C147.7 1015 151.823 1044.67 149.823 1055C128.156 1116 65.8227 1263.8 133.823 1266ZM133.823 1266C65.8227 1275 134.592 1071.73 156.5 1063.29M158 1063C157.505 1063 157.004 1063.1 156.5 1063.29"
+						stroke="#D61818"
+						strokeWidth="5"
+					/>
+				</svg>
+			</div>
+
+			<section class="one">
+				<h1 class="scroll" data-rate=".4" data-direction="vertical">Ocean Stuff</h1>
+			</section>
+
+			<section class="two">
+				<h1 class="scroll" data-rate=".2" data-direction="vertical">omg scroll</h1>
+				<p>Big Watermark</p>
+			</section>
+      
+			<section class="two">
+				<p>Keep Scrolling</p>
+			</section>
+		</div>
 	</body>
+	<script type="module" src="/main.js"></script>
 </html>
